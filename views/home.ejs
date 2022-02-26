@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/whatsapp/314/shushing-face_1f92b.png">
+    <title>Home Page</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-image: url(https://cdn.discordapp.com/attachments/765973145852575746/934155713842925568/MacBook_Pro_14__-_2.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        justify-content: center;
+        height: 100vh;
+      }
+      @media screen and (max-width: 600px)
+      {
+        body {
+        background-image: url(https://cdn.discordapp.com/attachments/765973145852575746/934155714153287760/iPhone_13_Pro_Max_-_2.png);
+        background-size: auto 100%;}
+      }
+    </style>
+  </head>
+
+  <body class="space-y-8">
+    <!--<form name="confession" action="/submit" method="POST">
+    <input type="text" name="message"/>
+    <button type="submit">submit</button>
+    </form>-->
+    <div>
+      <p class="text-4xl lg:text-8xl font-bold text-center md:text-right text-gray-800">Just Let It Out</p>
+      <p class="text-center text-2xl md:text-4xl leading-9 md:text-right text-gray-800">Don’t worry, its <span class="text-indigo-700">100%</span> anonymous</p>
+    </div>
+    <form class="flex flex-col items-center space-y-8" method="POST">
+      <textarea value="" name="message" placeholder="Type you message here....." class="p-8 bg-white shadow-2xl rounded-2xl w-full max-w-3xl text-xl md:text-2xl leading-9 text-gray-600 h-72"></textarea>
+      <button type="submit" class="inline-flex transform hover:shadow-gray-400 active:scale-90 items-center justify-center w-80 h-16 px-10 py-3 bg-gray-800 shadow-2xl shadow-gray-900 rounded-lg">
+        <p class="text-2xl font-semibold leading-normal text-white">CONFESS</p>
+      </button>
+    </form>
+  </body>
+</html>
